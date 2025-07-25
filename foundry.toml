@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.20"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+# Injective testnet configuration
+[rpc_endpoints]
+injective_testnet = "https://k8s.testnet.json-rpc.injective.network/"
+
+[etherscan]
+injective_testnet = { key = "${ETHERSCAN_API_KEY}", url = "https://testnet.explorer.injective.network/" }
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

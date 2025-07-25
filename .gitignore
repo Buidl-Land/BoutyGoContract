@@ -1,0 +1,12 @@
+# NPM
+node_modules
+# Foundry
+cache
+out
+broadcast
+deployments
+coverage
+coverage.json
+# User specific
+.env
+lib
